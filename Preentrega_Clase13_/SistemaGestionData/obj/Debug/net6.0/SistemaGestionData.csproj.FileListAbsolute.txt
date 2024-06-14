@@ -1,0 +1,15 @@
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\bin\Debug\net6.0\SistemaGestionData.deps.json
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\bin\Debug\net6.0\SistemaGestionData.dll
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\bin\Debug\net6.0\SistemaGestionData.pdb
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\bin\Debug\net6.0\SistemaGestionEntities.dll
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\bin\Debug\net6.0\SistemaGestionEntities.pdb
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.csproj.AssemblyReference.cache
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.GeneratedMSBuildEditorConfig.editorconfig
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.AssemblyInfoInputs.cache
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.AssemblyInfo.cs
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.csproj.CoreCompileInputs.cache
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.csproj.CopyComplete
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.dll
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\refint\SistemaGestionData.dll
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\SistemaGestionData.pdb
+D:\coder nuevo\curso_de_c#\progrmas _curso_c#_coder_house\Desafios\Desafio\SistemaGestionData\obj\Debug\net6.0\ref\SistemaGestionData.dll
