@@ -50,11 +50,16 @@ namespace SistemaGestionData
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return listVentaData;
             }
 
+        }
+
+        public static Venta GetVentas(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public static List<Venta> GetVentas()

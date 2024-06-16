@@ -50,11 +50,16 @@ namespace SistemaGestionData
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return listProductoVendidoData;
             }
 
+        }
+
+        public static Producto GetUsuarios(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

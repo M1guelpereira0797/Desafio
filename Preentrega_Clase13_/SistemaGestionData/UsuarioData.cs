@@ -51,7 +51,7 @@ namespace SistemaGestionData
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return listaUsuario;
             }
@@ -91,7 +91,7 @@ namespace SistemaGestionData
         }
         public static bool UpdateUsuario(Usuario usuario)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=SistemaGestion;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "UPDATE Cliente SET nombre = @nombre, apellido = @apellido, domicilio = @domicilio, telefono = @telefono WHERE Id = @id";
@@ -109,4 +109,5 @@ namespace SistemaGestionData
             }
 
         }
+    }
 }

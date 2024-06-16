@@ -15,6 +15,10 @@ namespace SistemaGestionBussiness
             return VentaData.GetVentas();
 
         }
+        public static Venta GetVentasById(int id)
+        {
+            return VentaData.GetVentas(id);
+        }
 
     }
 }

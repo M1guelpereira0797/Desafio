@@ -9,32 +9,30 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [Route("api/[controller]")]
-        [ApiController]
-        public class ClienteController : ControllerBase
-        {
-            [HttpGet(Name = "GetCliente")]
+       
+            [HttpGet(Name = "GetUsuario")]
             public IEnumerable<Usuario> usuarios()
             {
                 return UsuarioBussiness.GetUsuarios().ToArray();
             }
 
-            [HttpDelete(Name = "EliminarCliente")]
+            [HttpDelete(Name = "EliminarUsuario")]
             public void Delete([FromBody] int id)
             {
                 UsuarioBussiness.EliminarUsuario(id);
             }
-            [HttpPut(Name = "ModificarCliente")]
+            [HttpPut(Name = "ModificarUsuario")]
             public void Put([FromBody] Usuario usuario)
             {
                 UsuarioBussiness.ModificarUsuario(usuario);
             }
-            [HttpPost(Name = "AltaCliente")]
+            [HttpPost(Name = "AltaUsuario")]
             public void Post([FromBody] Usuario usuario)
             {
                 UsuarioBussiness.AltaUsuario(usuario);
 
             }
 
-        }
+        
     }
+}
