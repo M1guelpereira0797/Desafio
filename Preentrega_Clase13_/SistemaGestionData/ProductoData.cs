@@ -15,7 +15,7 @@ namespace SistemaGestionData
         {
             List<Producto> listaProductos = new List<Producto>();
 
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             var query = "SELECT * FROM Producto";
 
@@ -33,7 +33,7 @@ namespace SistemaGestionData
                             {
                                 var producto = new Producto();
                                 producto.Id = Convert.ToInt32(dataReader["Id"]);
-                                producto.Descripcion = dataReader["Descripcion"].ToString();
+                                /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
                                 producto.Costo = Convert.ToDouble(dataReader["Costo"]);
                                 producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
                                 listaProductos.Add(producto);
@@ -51,7 +51,7 @@ namespace SistemaGestionData
 
         public static Producto GetProducto(int id)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -67,7 +67,7 @@ namespace SistemaGestionData
                 {
                     var producto = new Producto();
                     producto.Id = Convert.ToInt32(dataReader["Id"]);
-                    producto.Descripcion = dataReader["Descripcion"].ToString();
+                    /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
                     producto.Costo = Convert.ToDouble(dataReader["Costo"]);
                     producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
 
@@ -80,7 +80,7 @@ namespace SistemaGestionData
 
         public static bool DeleteProducto(int id)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -95,12 +95,12 @@ namespace SistemaGestionData
 
         public static bool CreateProducto(Producto producto)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO Productos(Descripcion,Costo,PrecioVenta,Stock,IdUsuario) values(@descripcion,@costo,@precioVenta,@stock,@idUsuario)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("descripcion", producto.Descripcion);
+                /*command.Parameters.AddWithValue("descripcion", producto.Descripcion);*/
                 command.Parameters.AddWithValue("costo", producto.Costo);
                 command.Parameters.AddWithValue("precioVenta", producto.PrecioVenta);
                 command.Parameters.AddWithValue("stock", producto.Stock);
@@ -113,13 +113,13 @@ namespace SistemaGestionData
 
         public static bool EditProducto(Producto producto)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "UPDATE Productos SET Descripcion = @descripcion, Costo = @costo, PrecioVenta = @precioVenta, Stock = @stock, IdUsuario = @idUsuario WHERE  Id = @id";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("descripcion", producto.Descripcion);
+                /*command.Parameters.AddWithValue("descripcion", producto.Descripcion);*/
                 command.Parameters.AddWithValue("costo", producto.Costo);
                 command.Parameters.AddWithValue("precioVenta", producto.PrecioVenta);
                 command.Parameters.AddWithValue("stock", producto.Stock);

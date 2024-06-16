@@ -14,7 +14,7 @@ namespace SistemaGestionData
     {
         public static List<Venta> GetUsuarios()
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             List<Venta> listVentaData = new List<Venta>();
 

@@ -15,6 +15,7 @@ namespace WebApplication1.Controllers
         {
             return VentaBussiness.GetVentas().ToArray();
         }
+        [HttpGet("{id}")]
         public IActionResult GetVetnasById(int id)
         {
             Venta ventas = VentaBussiness.GetVentas()[id];

@@ -13,7 +13,7 @@ namespace SistemaGestionData
     {
         public static List<ProductoVendido> GetUsuarios()
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             List<ProductoVendido> listProductoVendidoData = new List<ProductoVendido>();
 

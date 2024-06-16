@@ -13,7 +13,7 @@ namespace SistemaGestionData
     {
         public static List<Usuario> GetUsuarios()
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             List<Usuario> listaUsuario = new List<Usuario>();
 
@@ -59,7 +59,7 @@ namespace SistemaGestionData
         }
         public static bool CreateUsuario(Usuario usuario)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO Cliente(nombre, apellido, domicilio, telefono) values(@nombre, @apellido, @domicilio, @telefono)";
@@ -77,7 +77,7 @@ namespace SistemaGestionData
 
         public static bool DeleteUsuario(int id)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -91,7 +91,7 @@ namespace SistemaGestionData
         }
         public static bool UpdateUsuario(Usuario usuario)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "UPDATE Cliente SET nombre = @nombre, apellido = @apellido, domicilio = @domicilio, telefono = @telefono WHERE Id = @id";
