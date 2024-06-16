@@ -15,7 +15,7 @@ namespace SistemaGestionBussiness
             return ProductoVendidoData.GetUsuarios();
 
         }
-        public static Producto GetProductoById(int id)
+        public static ProductoVendido GetUsuariosById(int id)
         {
             return ProductoVendidoData.GetUsuarios(id);
         }

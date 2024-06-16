@@ -12,12 +12,12 @@ namespace SistemaGestionBussiness
     {
         public static List<Venta> GetVentas()
         {
-            return VentaData.GetVentas();
+            return VentaData.GetUsuarios();
 
         }
         public static Venta GetVentasById(int id)
         {
-            return VentaData.GetVentas(id);
+            return VentaData.GetUsuarios(id);
         }
 
     }

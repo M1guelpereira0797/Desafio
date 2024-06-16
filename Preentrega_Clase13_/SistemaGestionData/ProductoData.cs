@@ -49,7 +49,7 @@ namespace SistemaGestionData
             }
         }
 
-        public static Producto GetProducto(int id)
+        public static Producto GetProducto(int Id)
         {
             string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
@@ -58,7 +58,7 @@ namespace SistemaGestionData
                 string query = "SELECT * FROM Productos WHERE Id = @id";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("id", id);
+                command.Parameters.AddWithValue("id", Id);
                 connection.Open();
 
                 SqlDataReader dataReader = command.ExecuteReader();

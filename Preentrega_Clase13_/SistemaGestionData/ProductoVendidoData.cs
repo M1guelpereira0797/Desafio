@@ -57,9 +57,35 @@ namespace SistemaGestionData
 
         }
 
-        public static Producto GetUsuarios(int id)
+        
+        public static ProductoVendido GetUsuarios(int id)
         {
-            throw new NotImplementedException();
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Productos Vendido WHERE Id = @id";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("id", id);
+                connection.Open();
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                if (dataReader.Read())
+                {
+                    var productoVendido = new ProductoVendido();
+                    productoVendido.Id = Convert.ToInt32(dataReader["Id"]);
+                    /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
+                    productoVendido.idProducto = Convert.ToInt32(dataReader["Costo"]);
+                    productoVendido.Stock = Convert.ToInt32(dataReader["PrecioVenta"]);
+                    productoVendido.idVenta= Convert.ToInt32(dataReader["PrecioVenta"]);
+
+                    return productoVendido;
+                }
+
+                throw new Exception("ID NO ENCONTRADO");
+            }
         }
     }
 }

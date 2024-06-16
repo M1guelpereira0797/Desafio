@@ -11,9 +11,9 @@ namespace SistemaGestionBussiness
 {
     public class ProductoBussiness
     {
-        public static Producto GetProductoById(int id)
+        public static Producto GetProductoById(int Id)
         {
-            return ProductoData.GetProducto(id);
+            return ProductoData.GetProducto(Id);
         }
         public static List<Producto> GetProductos()
         {
@@ -23,9 +23,9 @@ namespace SistemaGestionBussiness
         {
             return ProductoData.CreateProducto(producto);
         }
-        public static bool BorrarProducto(int id)
+        public static bool BorrarProducto(int Id)
         {
-            return ProductoData.DeleteProducto(id);
+            return ProductoData.DeleteProducto(Id);
         }
         public static bool ModificarProducto(Producto producto)
         {
