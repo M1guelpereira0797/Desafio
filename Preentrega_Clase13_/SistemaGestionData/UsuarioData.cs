@@ -57,5 +57,56 @@ namespace SistemaGestionData
             }
 
         }
-    }
+        public static bool CreateUsuario(Usuario usuario)
+        {
+            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO Cliente(nombre, apellido, domicilio, telefono) values(@nombre, @apellido, @domicilio, @telefono)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("nombre",usuario.Nombre);
+                command.Parameters.AddWithValue("apellido", usuario.Apellido);
+                command.Parameters.AddWithValue("domicilio", usuario.Domicilio);
+                command.Parameters.AddWithValue("telefono", usuario.Telefono);
+                connection.Open();
+
+                return command.ExecuteNonQuery() > 0;
+
+            }
+        }
+
+        public static bool DeleteUsuario(int id)
+        {
+            string connectionString = @"Server=localhost\SQLEXPRESS;Database=Base_Prueba2;Trusted_Connection=True;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "DELETE FROM Usuario WHERE Id=@id";
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.Parameters.AddWithValue("id", id);
+
+                return command.ExecuteNonQuery() > 0;
+            }
+        }
+        public static bool UpdateUsuario(Usuario usuario)
+        {
+            string connectionString = @"Server=localhost\SQLEXPRESS;Database=SistemaGestion;Trusted_Connection=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "UPDATE Cliente SET nombre = @nombre, apellido = @apellido, domicilio = @domicilio, telefono = @telefono WHERE Id = @id";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("nombre", usuario.Nombre);
+                command.Parameters.AddWithValue("apellido", usuario.Apellido);
+                command.Parameters.AddWithValue("domicilio", usuario.Domicilio);
+                command.Parameters.AddWithValue("telefono", usuario.Telefono);
+                command.Parameters.AddWithValue("id", usuario.Id);
+
+                connection.Open();
+
+                return command.ExecuteNonQuery() > 0;
+
+            }
+
+        }
 }

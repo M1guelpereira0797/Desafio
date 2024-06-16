@@ -14,5 +14,9 @@ namespace SistemaGestionEntities
         public string NombreUsuario { get; set; }
         public string Contrasena { get; set; }
         public string Mail { get; set; }
+        
+        public string Domicilio { get; set; }
+
+        public string Telefono { get; set; }
     }
 }

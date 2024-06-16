@@ -18,7 +18,7 @@ namespace SistemaGestionData
 
             List<Venta> listVentaData = new List<Venta>();
 
-            string query = "SELECT * FROM Cliente ";
+            string query = "SELECT * FROM Venta ";
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))

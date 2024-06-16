@@ -17,7 +17,7 @@ namespace SistemaGestionData
 
             List<ProductoVendido> listProductoVendidoData = new List<ProductoVendido>();
 
-            string query = "SELECT * FROM Producto Vendido";
+            string query = "SELECT * FROM ProductoVendido";
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
