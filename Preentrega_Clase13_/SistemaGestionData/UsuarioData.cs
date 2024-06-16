@@ -37,7 +37,7 @@ namespace SistemaGestionData
                                     usuario.Nombre = dataReader["Nombre"].ToString();
                                     usuario.Apellido = dataReader["Apellido"].ToString();
                                     usuario.NombreUsuario = dataReader["NombreUsuario"].ToString();
-                                    usuario.Contrasena = Convert.ToInt32(dataReader["Contraseña"]);
+                                    usuario.Contrasena = dataReader["Contraseña"].ToString();
                                     usuario.Mail = dataReader["Mail"].ToString();
 
                                     listaUsuario.Add(usuario);

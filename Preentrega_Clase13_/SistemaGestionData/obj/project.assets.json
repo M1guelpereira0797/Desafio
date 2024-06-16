@@ -480,11 +480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionData\\SistemaGestionData.csproj",
+      "projectUniqueName": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionData\\SistemaGestionData.csproj",
       "projectName": "SistemaGestionData",
-      "projectPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionData\\SistemaGestionData.csproj",
+      "projectPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionData\\SistemaGestionData.csproj",
       "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
-      "outputPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionData\\obj\\",
+      "outputPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -507,8 +507,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
-              "projectPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
+            "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionEntities\\SistemaGestionEntities.csproj": {
+              "projectPath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionEntities\\SistemaGestionEntities.csproj"
             }
           }
         }

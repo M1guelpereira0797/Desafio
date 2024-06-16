@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IhO4zFA+4UAEmpNM4Wk1WWjp/ULAQmBxpiVqI1f4qRNfd/8mS0Tmbx9fiTmiPA3dC4CQjzTfeldTg3HxR5GeNw==",
+  "dgSpecHash": "SAvUaZqmf0z31yUgpfK3gELZNRpthbQb/DySfmKwEX6vAReuzuDyPfxnM1YONXA6lkyFOntChH1MTe7ZEO5QuQ==",
   "success": true,
-  "projectFilePath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios\\Desafio\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
+  "projectFilePath": "D:\\coder nuevo\\curso_de_c#\\progrmas _curso_c#_coder_house\\Desafios_CoderHouse\\Desafio\\Preentrega_Clase13_\\SistemaGestionBussiness\\SistemaGestionBussiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\migue\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
