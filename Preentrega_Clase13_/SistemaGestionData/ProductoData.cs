@@ -49,16 +49,16 @@ namespace SistemaGestionData
             }
         }
 
-        public static Producto GetProducto(int Id)
+        public static Producto GetProducto(int id)
         {
-            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
+            string connectionString = @"Server=localhost\SQLEXPRESS01;Database=BASE_PRUEBA2;Trusted_Connection=True;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT * FROM Productos WHERE Id = @id";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("id", Id);
+                command.Parameters.AddWithValue("id", id);
                 connection.Open();
 
                 SqlDataReader dataReader = command.ExecuteReader();
@@ -67,7 +67,7 @@ namespace SistemaGestionData
                 {
                     var producto = new Producto();
                     producto.Id = Convert.ToInt32(dataReader["Id"]);
-                    /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
+                    producto.Descripcion = dataReader["Descripcion"].ToString();
                     producto.Costo = Convert.ToDouble(dataReader["Costo"]);
                     producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
 

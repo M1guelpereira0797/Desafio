@@ -15,7 +15,13 @@ namespace WebApplication1.Controllers
             {
                 return UsuarioBussiness.GetUsuarios().ToArray();
             }
+            [HttpGet("{id}")]
+            public IActionResult GetUsuarioById(int id)
+            {
+                Usuario usuario = UsuarioBussiness.GetUsuarioById(id);
 
+                return Ok(usuario);
+            }
             [HttpDelete(Name = "EliminarUsuario")]
             public void Delete([FromBody] int id)
             {

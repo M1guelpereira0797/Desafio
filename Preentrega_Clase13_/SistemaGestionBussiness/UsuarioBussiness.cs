@@ -25,9 +25,9 @@ namespace SistemaGestionBussiness
             UsuarioData.DeleteUsuario(id);
         }
 
-        public static List<Usuario> GetUsuario()
+        public static Usuario GetUsuarioById(int Id)
         {
-            return UsuarioData.GetUsuarios();
+            return UsuarioData.GetUsuario(Id);
         }
 
         public static void ModificarUsuario(Usuario usuario)

@@ -12,7 +12,7 @@ namespace SistemaGestionData
 
     public class VentaData
     {
-        public static List<Venta> GetUsuarios()
+        public static List<Venta> GetVentas()
         {
             string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
@@ -35,7 +35,7 @@ namespace SistemaGestionData
                                     var venta = new Venta();
 
                                     venta.Id = Convert.ToInt32(dataReader["Id"]);
-                                    venta.Comentarios = dataReader["Comentarios"].ToString();
+                                    venta.Comentario = dataReader["Comentarios"].ToString();
                                     venta.idUsuario = dataReader["ID Usuaurio"].ToString();
 
 
@@ -57,7 +57,7 @@ namespace SistemaGestionData
 
         }
 
-        public static Venta GetUsuarios(int id)
+        public static Venta GetVenta(int id)
         {
             string connectionString = @"Server=localhost\SQLEXPRESS01;Database=Base_Prueba2;Trusted_Connection=True;";
 
@@ -76,9 +76,9 @@ namespace SistemaGestionData
                     var venta = new Venta();
                     venta.Id = Convert.ToInt32(dataReader["Id"]);
                     /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
-                    venta.Comentarios = dataReader["Costo"].ToString();
-                    venta.idUsuario = dataReader["PrecioVenta"].ToString();
-                   
+                    /*venta.Comentario = dataReader["Costo"].ToString(); */
+                    /* venta.idUsuario = dataReader["PrecioVenta"].ToString();*/
+
 
                     return venta;
                 }
