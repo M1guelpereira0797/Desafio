@@ -67,7 +67,7 @@ namespace SistemaGestionData
                 {
                     var producto = new Producto();
                     producto.Id = Convert.ToInt32(dataReader["Id"]);
-                    producto.Descripcion = dataReader["Descripcion"].ToString();
+                    /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
                     producto.Costo = Convert.ToDouble(dataReader["Costo"]);
                     producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
 

@@ -77,7 +77,7 @@ namespace SistemaGestionData
                     venta.Id = Convert.ToInt32(dataReader["Id"]);
                     /*producto.Descripcion = dataReader["Descripcion"].ToString();*/
                     /*venta.Comentario = dataReader["Costo"].ToString(); */
-                    /* venta.idUsuario = dataReader["PrecioVenta"].ToString();*/
+                    /*venta.idUsuario = dataReader["id Usuario"].ToString(); */
 
 
                     return venta;
